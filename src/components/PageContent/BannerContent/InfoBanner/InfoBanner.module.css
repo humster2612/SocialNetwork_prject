@@ -1,0 +1,137 @@
+.bannerWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.bannerBackground {
+  position: relative;
+  background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+  background-size: cover;
+  background-position: center;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bannerContent {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin-top: 60px;
+  
+}
+
+.username {
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  font-size: 18px;
+  margin-top: 8px;
+  color: #fff;
+}
+
+.itemsocial {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.itemsocial li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+}
+
+.itemsocial li a:hover {
+  transform: scale(1.1);
+}
+
+.bgfb { background-color: #3b5998; }
+.bgtwitter { background-color: #55acee; }
+.bgdribble { background-color: #ea4c89; }
+.bgbehance { background-color: #1769ff; }
+.bgyoutube { background-color: #ff0000; }
+
+.aboutCardOverlay {
+  position: absolute;
+  top: 70%;
+  left: 15%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  width: 260px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.avatarBig {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.email {
+  font-size: 14px;
+  color: #777;
+  margin:-20px;
+}
+
+.location {
+  font-size: 13px;
+  color: #777;
+}
+
+.aboutTitle {
+  font-size: 12px;
+  color: #555;
+  margin-top: 14px;
+  font-weight: bold;
+}
+
+.aboutText {
+  font-size: 13px;
+  color: #444;
+  margin-top: 6px;
+}
+
+.editBtn {
+  margin-top: 10px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+}

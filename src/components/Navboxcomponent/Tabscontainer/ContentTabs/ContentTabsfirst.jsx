@@ -66,7 +66,7 @@ const ContentTabsfirst =({toggleState}) =>{
 
       </div>
             
-          <ContentFirstImages/>
+          {/* <ContentFirstImages/> */}
           
       </div>
       </div>

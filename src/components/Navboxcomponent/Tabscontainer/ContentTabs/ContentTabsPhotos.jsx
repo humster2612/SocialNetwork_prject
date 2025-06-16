@@ -34,10 +34,10 @@ const ContentTabsPhotos = ({ toggleState }) => {
             alt="Status Photo 6"
             src="https://www.radiustheme.com/demo/wordpress/themes/cirkle/wp-content/uploads/mediapress/members/1/185/Status-Photo-6.jpg"
           />
-          <img
+          {/* <img
             alt="Status Photo 8"
             src="https://www.radiustheme.com/demo/wordpress/themes/cirkle/wp-content/uploads/mediapress/members/1/185/Status-Photo-8.jpg"
-          />
+          /> */}
           <img
             alt="Widget Gallery 1"
             src="https://www.radiustheme.com/demo/wordpress/themes/cirkle/wp-content/uploads/2021/06/Widget-Gallery-1.jpg"
@@ -46,11 +46,11 @@ const ContentTabsPhotos = ({ toggleState }) => {
             alt="Widget Gallery 2"
             src="https://www.radiustheme.com/demo/wordpress/themes/cirkle/wp-content/uploads/2021/06/Widget-Gallery-2.jpg"
           />
-          <img
+          {/* <img
             alt="Widget Gallery 3"
             src="https://www.radiustheme.com/demo/wordpress/themes/cirkle/wp-content/uploads/2021/06/Widget-Gallery-3.jpg"
-          />
-          <img
+          /> */}
+          {/* <img
             alt="Widget Gallery 4"
             src="https://www.radiustheme.com/demo/wordpress/themes/cirkle/wp-content/uploads/2021/06/Widget-Gallery-4.jpg"
           />
@@ -61,7 +61,7 @@ const ContentTabsPhotos = ({ toggleState }) => {
           <img
             alt="Widget Gallery 7"
             src="https://www.radiustheme.com/demo/wordpress/themes/cirkle/wp-content/uploads/2021/06/Widget-Gallery-7.jpg"
-          />
+          /> */}
         </div>
       </div>
     </div>

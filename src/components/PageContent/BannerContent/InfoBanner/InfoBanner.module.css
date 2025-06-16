@@ -4,23 +4,25 @@
   width: 100%;
 }
 
+
+
 .bannerBackground {
   position: relative;
   background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
   background-size: cover;
   background-position: center;
-  height: 320px;
+  height: 320px; /* ← этот стиль работает только на десктопе */
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 
 .bannerContent {
   text-align: center;
   position: relative;
   z-index: 1;
   margin-top: 60px;
-  
 }
 
 .username {
@@ -70,22 +72,31 @@
 .bgbehance { background-color: #1769ff; }
 .bgyoutube { background-color: #ff0000; }
 
+/* === ВАЖНО: изменённые стили карточки about me === */
+
 .aboutCardOverlay {
   position: absolute;
-  top: 70%;
-  left: 15%;
-  transform: translateY(-50%);
-  z-index: 2;
+  top: 100px;
+  left: 60px;
+  z-index: 3;
 }
 
 .card {
   background: white;
-  border-radius: 12px;
-  padding: 20px;
-  width: 260px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 16px;
+  padding: 24px 20px;
+  width: 300px;
+  min-height: 420px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
+/* 🔽 адаптив */
+
 
 .avatarBig {
   width: 100px;
@@ -104,25 +115,33 @@
 .email {
   font-size: 14px;
   color: #777;
-  margin:-20px;
+  margin: -4px 0 0;
 }
 
 .location {
   font-size: 13px;
   color: #777;
+  margin-top: -14px;
+}
+.text {
+  font-size: 13px;
+  color: #777;
+  
 }
 
 .aboutTitle {
   font-size: 12px;
   color: #555;
   margin-top: 14px;
+  margin-bottom: 14px;
   font-weight: bold;
 }
 
 .aboutText {
   font-size: 13px;
   color: #444;
-  margin-top: 6px;
+  margin-top: 10px;
+  text-align: left;
 }
 
 .editBtn {
@@ -135,3 +154,56 @@
   font-size: 14px;
   cursor: pointer;
 }
+
+
+@media (max-width: 600px) {
+  .bannerBackground {
+    flex-direction: column-reverse; /* баннер уходит под карточку */
+    height: auto;
+    padding-bottom: 20px;
+  }
+
+  .aboutCardOverlay {
+    position: static;
+    transform: none;
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    min-height: auto;
+  }
+
+  .bannerContent {
+    margin-top: 20px;
+  }
+
+  .username {
+    font-size: 28px;
+  }
+
+  .stats {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+  }
+
+  .itemsocial {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .itemsocial li a {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+}
+
+
+

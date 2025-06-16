@@ -1,46 +1,104 @@
 .form {
-    background: white;
-    padding: 20px;
-    border-radius: 16px;
-    box-shadow: 0 0 10px #ccc;
-    margin: 20px auto;
-    max-width: 600px;
+    background: #f2f8f9;
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 700px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #222;
   }
   
   textarea {
-    resize: vertical;
-    min-height: 80px;
-    padding: 10px;
+    resize: none;
+    min-height: 100px;
+    padding: 14px 20px;
     font-size: 16px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    font-family: inherit;
+    background: #fff;
+    outline: none;
+    transition: box-shadow 0.3s;
+  }
+  
+  textarea:focus {
+    box-shadow: 0 0 0 3px rgba(78, 142, 247, 0.3);
   }
   
   input[type="file"] {
-    font-size: 14px;
+    display: none;
+  }
+  
+  .uploadLabel {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+    padding: 14px 20px;
+    background: #fff;
+    border: 2px dashed #aacbda;
+    border-radius: 20px;
+    transition: background 0.3s;
+  }
+  
+  .uploadLabel:hover {
+    background: #eef7f8;
   }
   
   button {
-    padding: 10px;
-    background-color: #4e8ef7;
+    padding: 12px 20px;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 6px;
-    font-size: 16px;
+    border-radius: 999px;
+    font-size: 18px;
+    font-weight: bold;
     cursor: pointer;
+    align-self: flex-start;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background 0.3s;
+    padding-inline: 32px;
   }
   
   button:hover {
-    background-color: #357ae8;
+    background-color: #005dc3;
   }
   
   .preview {
-    margin-top: 10px;
     max-width: 100%;
     max-height: 300px;
     object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 600px) {
+    .form {
+      padding: 20px;
+      border-radius: 16px;
+    }
+  
+    textarea {
+      font-size: 15px;
+    }
+  
+    button {
+      width: 100%;
+      justify-content: center;
+    }
   }
   

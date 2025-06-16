@@ -1,6 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import s from './Timeline.module.css';
+// import s from './Timeline.module.css';
+import s from '../components/LeftSidebar.module.css';
+
 
 const LeftSidebar = () => {
   const navigate = useNavigate();

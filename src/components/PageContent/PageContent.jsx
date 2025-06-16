@@ -1,24 +1,21 @@
 import React from 'react';
 import s from './PageContent.module.css';
-// import BannerContent from './BannerContent/BannerContent';
 import InfoBanner from './BannerContent/InfoBanner/InfoBanner';
-// import Infometa from './BannerContent/Infometa/Infometa';
-import Preloader from '../Coomon/Preloader/Preloader';
-// import ProfileStatus from './ProfileStatus';
+import ContentTabsPhotos from '../Navboxcomponent/Tabscontainer/ContentTabs/ContentTabsPhotos';
 
 const PageContent = ({ profile, updateStatus }) => {
-  // if (!profile || !profile.photos || !profile.photos.large) {
-  //   return <Preloader />;
-  // }
   return (
-    <div className={s.addwrapper}>
+    <div className={s.pageWrapper}>
       <div className={s.bannerback}>
-        {/* <BannerContent /> */}
         <InfoBanner />
-        {/* <Infometa /> */}
       </div>
-      {/* <img src={profile.photos.large} alt="Profile" />
-      <ProfileStatus status={status} updateStatus={updateStatus} /> */}
+
+      <div className={s.contentLayout}>
+        <div className={s.rightContent}>
+          <h2 className={s.photoTitle}>MY PHOTOS</h2>
+          <ContentTabsPhotos toggleState={4} />
+        </div>
+      </div>
     </div>
   );
 };

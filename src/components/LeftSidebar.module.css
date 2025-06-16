@@ -1,0 +1,40 @@
+.sidebar {
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .aboutCard,
+  .categoriesCard {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .avatarBig {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 12px;
+    display: block;
+  }
+  
+  .readMore {
+    display: block;
+    margin: 10px auto 0;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .readMore:hover {
+    background-color: #3a78c2;
+  }
+  

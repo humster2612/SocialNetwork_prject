@@ -58,7 +58,11 @@ formData.append('user', currentUser?.username || 'Ты');
         value={text}
         onChange={(e) => setText(e.target.value)}
       />
-      <input type="file" accept="image/*" onChange={handleFileChange} />
+     <label htmlFor="fileInput" className={s.uploadLabel}>
+  📸 Upload Image
+</label>
+<input id="fileInput" type="file" accept="image/*" onChange={handleFileChange} />
+
 
       {previewUrl && (
         <img src={previewUrl} alt="preview" className={s.preview} />

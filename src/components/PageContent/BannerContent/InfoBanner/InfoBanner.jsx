@@ -39,9 +39,14 @@ const InfoBanner = () => {
               <img src={avatar} alt="Profile" className={s.avatarBig} />
             </div>
             <h3>{user.username}</h3>
-            <p className={s.subtitle}>programmer</p>
+            <p className={s.subtitle}>Programmer</p>
             <p className={s.email}>{user.email}</p>
             <p className={s.location}>📍 Rzeszów</p>
+            <p className={s.text}>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+               Tenetur inventore animi at? Ducimus,
+                similique maiores suscipit quas alias iure non 
+                commodi pariatur harum mollitia ratione temporibus! 
+                Quam maiores illum unde.</p>
           </div>
         </div>
 

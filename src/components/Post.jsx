@@ -11,7 +11,7 @@ const Post = ({ post, onUpdate, onDelete }) => {
 
   const currentUser = JSON.parse(localStorage.getItem('currentUser'));
   const currentUsername = currentUser?.username || 'You';
-  const currentAvatar = currentUser?.avatar || `https://i.pravatar.cc/150?u=${currentUsername}`;
+  const currentAvatar = currentUser?.avatar || `https://i.pravatar.cc/200?u=667620fb59365e0e6033ed22`;
 
   const displayUsername = post.user === 'Ты' ? currentUsername : post.user;
   const displayAvatar = post.avatar || `https://i.pravatar.cc/40?u=${displayUsername}`;

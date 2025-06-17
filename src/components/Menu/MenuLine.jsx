@@ -24,7 +24,9 @@ const MenuLine = () => {
                 <Link to="/users">USERS</Link> 
             </div> */}
             <div className={s.item}>
-                <Link to="/users">DESTINETION</Link> 
+                <Link to="/destination">DESTINETION</Link> 
+
+
             </div>
         </div>
     );

@@ -12,14 +12,15 @@ import Dialogs from './components/Menu/DialogPage/Dialogs/Dialogs';
 import Timeline from './components/Timeline';
 import CreatePostPage from './components/CreatePostPage'; // добавь импорт
 import ExploreUsers from './components/ExploreUsers';
-import Destination from './components/Destination';
+import DestinationComponent from './components/Destination'; // Переименуй импорт
+
 
 const ProtectedTimeline = withAuthRedirect(Timeline);
 const ProtectedProfile = withAuthRedirect(ProfileContainer);
 const ProtectedDialogs = withAuthRedirect(DialogsContainer);
 const ProtectedUsers = withAuthRedirect(UsersContainer);
 const ProtectedExploreUsers = withAuthRedirect(ExploreUsers);
-
+const ProtectedDestination = withAuthRedirect(DestinationComponent); // Оберни в защиту
 
 
 const App = () => {
@@ -40,7 +41,9 @@ const App = () => {
 
           <Route path="/explore" element={<ProtectedExploreUsers />} />
 
-          <Route path="/destination" element={<Destination />} />
+          <Route path="/destination" element={<ProtectedDestination />} />
+
+
           {/* Страница пользователей */}
           {/* <Route path="/users" element={<ProtectedUsers />} /> */}
 

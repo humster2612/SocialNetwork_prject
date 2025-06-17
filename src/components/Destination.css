@@ -1,0 +1,114 @@
+.destination-page {
+    position: relative;
+    padding: 60px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    text-align: center;
+    min-height: 100vh;
+    background-color: #f0f4f8;
+    overflow: hidden;
+  }
+  
+  .map-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-image: url('https://i.pinimg.com/736x/c3/79/a0/c379a0cd4742ebdbc8ca73beee738a8e.jpg'); */
+    background-size: cover;
+    background-position: center;
+    opacity: 100; /* ← Увеличена яркость */
+    z-index: 0;
+    filter: contrast(110%) brightness(110%); /* ← Повышена контрастность и яркость */
+  }
+  
+  .destination-page h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .intro {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slider-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .slide-card {
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.4s ease;
+  }
+  
+  .slide-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .slide-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    background-color: #ddd;
+  }
+  
+  .slide-info {
+    padding: 20px 24px;
+  }
+  
+  .slide-info h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #1a2c40;
+  }
+  
+  .location {
+    font-size: 16px;
+    color: #5e7a9c;
+    margin-top: 4px;
+  }
+  
+  .description {
+    font-size: 15px;
+    color: #444;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .slide-card img {
+      height: 220px;
+    }
+  
+    .slide-info h2 {
+      font-size: 20px;
+    }
+  
+    .description {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .destination-page h1 {
+      font-size: 28px;
+    }
+    .intro {
+      font-size: 16px;
+    }
+  }
+  
